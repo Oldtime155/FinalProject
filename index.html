@@ -1,6 +1,7 @@
 <html ng-app = 'mySign'>
 <head>
 <title>Workout Generator</title>
+<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="./stylesheets/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -11,7 +12,17 @@
 <script src="./javascripts/app.js"></script>
 </head>
 <body>
-<h1>Six Week Workout Generator</h1>
+<div class="fullscreen-bg">
+<video loop muted autoplay poster="./images/lifting.jpg" id="fullscreen-bg__video">
+    <source src="lifting.webm" type="video/webm">
+	<source src="lifting.mp4" type="video/mp4">
+</video>
+</div>
+<div id="header">
+	<h1>FastTrack<a id="us"> by Alex Waller and Brendan Huber</a>
+	</h1>				 
+</div>
+<h1 id="firstthing">Six Week Workout Generator</h1>
 <div ng-controller="SubjectDropDownController">
       <div class= "dropdown">
 	  Bench:<input type= "number" name= "bench">

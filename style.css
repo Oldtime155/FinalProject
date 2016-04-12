@@ -1,4 +1,8 @@
+
 body {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Special Elite', cursive;
+	color: white;
 	text-align: center;
 }
 h1 {
@@ -15,6 +19,9 @@ li {
 	list-style: none;
 	display: inline;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+input {
+	color:black;
 }
 span {
 	font-size: 300%;
@@ -34,7 +41,9 @@ span {
 	text-align:center;
 	border: 1px solid black;
 }
-
+#workoutGenerated{
+	font-size: 200%;
+}
 #prediction{
 	font-size: 200%;
 	margin-right: 515px;
@@ -44,4 +53,70 @@ span {
 #tiles{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 400%;
+}
+#firstthing {
+	margin-top:100px;
+}
+#us {
+	float: right;
+	font-size:50%;
+	color:white;
+}
+
+#header {
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    background: #595D5E;
+    height: 80px;
+    left: 0;
+    line-height: 3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+	text-align:left;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('cookie.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }
